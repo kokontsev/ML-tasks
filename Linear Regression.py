@@ -33,7 +33,7 @@ def sgd(X, y, lr, num_iterations):
         bias -= lr * db
     return weights, bias, err
 
-X = np.array([[1, 1], [1, 2], [1, 3]])
+X = np.array([[3, 1], [9, 2], [8, 3]])
 y = np.array([1, 2, 3])
-print(sgd(X, y, 0.01, 1000))
+print(gradient_descent(X, y, 0.01, 1000))
 
